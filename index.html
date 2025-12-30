@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-pessoal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+<ul>
+    <li><a href="#header">Lar</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="#projecto">projecto</a></li>
+<i class="fa-solid fa-clock"></i>
+</ul>
+    </nav>
+    <div class="header-text">
+        <h1>Olá, aqui <span>Raul xerinda</span></h1>
+    </div>
+</div>
+</div>
+    <!-- ---------about---------- -->
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+        <img src="images/laptop.jpg">
+        </div>
+        <div class="about-col-2">
+<h1 class="sub-title">Sobre mim</h1>
+<p>Chamo-me Raul xerinda tenho 18 anos e conclui á 12 classe na ES da Munhuana,
+    Sou estudante de tecnologia apaixonado por programação e disign
+Procurando oportunidades para aprender e crescer com habilidades
+em Python,HTML,CSS e disign UI/UX.
+ Desemvolvi um site pessoal para aprender e praticar minhas habilidades
+em HTML,CSS e Javascrip.
+O meu ojectivo é aprender e me tornar um desenvolvedor de software e 
+criar soluções inovadoras para problemas complexos.
+</p>
+
+<div class="tab-title">
+<p class="tab-links active-link" onclick="opentab ('Habilidades')">Habilidades</p>
+<p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+<p class="tab-links" onclick="opentab('Educação')">Educação</p>
+</div>
+<div class="tab-contents active-tab" id="habilidades">
+<ul>
+<li><span>2025</span><br>Ansioso para aprender Python, interesse em UI/UX.</li>
+</ul>
+</div>
+<div class="tab-contents" id="Experiencia">
+<ul>
+    <li><span>2025</span><br>Sem experiencia, mas ansioso para aprender e contribuir.</li>
+</ul>
+</div>
+<div class="tab-contents" id="Educação">
+<ul>
+    <li><span>2024</span><br>Conclui o ensino secundário (12 classe).</li>
+</ul>
+</div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ---------projecto---------- -->
+<div class="project">
+<div class="container">
+<div class="project-list">
+<div>
+<h2>Projecto</h2>
+<p>Quero aprender a criar apps simples com Python-ideias em desenvolvimento,
+    Aprender a criar scripts para automatizar tarefas.
+</p>
+</div>
+<div>
+<h2>Habilidades</h2>
+<p>.Quero aprendendo a programar em Python e javascrip ,Estudando HTML,CSS, para desenvolvimento web.
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ---------contacto -->
+<div id="contacto">
+    <div class="container">
+        <div class="row">
+    <div class="contact-left">
+<h1 class="sub-title">Contact me</h1>
+<i class="fa-solid fa-message"></i>
+<a href="/">nayronchirindza@43gmail.com</a>
+ <p><i class="fa-solid fa-mobile"></i>853415706</p>
+<p><i class="fa-solid fa-location-crosshairs"></i>Maputo,Moçambique</p>
+    </div>
+    <div class="contact-right">
+        <form>
+<input type="text" name="Name" placeholder="Your Name" required >
+<input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="Submit" class="btn btn2">Submit</button>
+        </form>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab (tabname){
+for (tablink of tablinks){
+    tablink.classList.remove("active-link");
+}
+for (tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
